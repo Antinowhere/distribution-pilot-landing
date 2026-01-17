@@ -15,6 +15,17 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Distribution Pilot | Data-Powered Content Automation',
   description: 'Make the right content, at scale, automatically. Real-time social data meets automated content creation.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180' },
+    ],
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
     title: 'Distribution Pilot | Data-Powered Content Automation',
     description: 'Make the right content, at scale, automatically.',

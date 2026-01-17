@@ -7,12 +7,8 @@ export function Hero() {
       {/* Main headline - centered */}
       <div className="w-full text-center px-5 sm:px-6 lg:px-8">
         <AnimatedHeadline />
-        <p className="mx-auto mt-6 whitespace-nowrap text-xl text-[var(--muted)] sm:text-2xl">
-          marketing with data powered content that performs
-        </p>
-        <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-7 text-[var(--muted2)]">
-          Not just making videos—making the <em>right</em> videos. Real-time trend data 
-          meets automated creation for content that actually performs.
+        <p className="mx-auto mt-6 max-w-3xl text-xl text-[var(--muted)] sm:text-2xl">
+          AI-generated video at scale—for software and ecommerce brands that need more customers, cheaper, automatically.
         </p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
