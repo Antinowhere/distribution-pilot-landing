@@ -20,8 +20,8 @@ const features = [
     icon: '🎬',
   },
   {
-    title: 'Runs Multiple Accounts',
-    description: 'Manages a fleet of TikTok, Instagram, and other social accounts. Warms them up, maintains health, keeps them active.',
+    title: 'Scales Your Presence',
+    description: 'Grows your reach across TikTok, Instagram, and more. Builds momentum, maintains consistency, keeps your brand active everywhere it matters.',
     icon: '📱',
   },
   {

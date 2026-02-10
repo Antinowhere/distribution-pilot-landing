@@ -34,7 +34,7 @@ export function Hero() {
 
         {/* Social proof hint */}
         <p className="mt-8 text-sm text-[var(--muted2)]">
-          Monthly retainer. Cancel anytime. Like a contractor, but better.
+          Flat monthly fee. No per-seat pricing, no usage caps. Just results.
         </p>
       </div>
 
