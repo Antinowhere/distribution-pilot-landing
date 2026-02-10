@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://distributionpilot.com/sitemap.xml
