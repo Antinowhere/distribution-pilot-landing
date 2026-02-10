@@ -8,8 +8,13 @@ export function Hero() {
       <div className="w-full text-center px-5 sm:px-6 lg:px-8">
         <AnimatedHeadline />
         <p className="mx-auto mt-6 max-w-3xl text-xl text-[var(--muted)] sm:text-2xl leading-relaxed">
-          Not a tool. <span className="text-white font-medium">A teammate.</span> It joins your Slack, 
+          Not a tool. <span className="text-white font-medium">A teammate.</span> It joins your Slack or Discord, 
           runs organic social across TikTok &amp; Instagram, and reports back like a real employee.
+        </p>
+        
+        <p className="mx-auto mt-4 max-w-2xl text-base text-[var(--muted2)]">
+          Direct reports via iMessage, WhatsApp, or Telegram. Team updates in your workspace. 
+          <span className="text-[var(--muted)] italic"> Yes, this is apparently where we're headed.</span>
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">

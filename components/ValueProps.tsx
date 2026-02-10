@@ -1,13 +1,18 @@
 const features = [
   {
     title: 'Joins Your Team Chat',
-    description: 'Shows up in Slack or Discord as a real team member. Asks questions, shares updates, flags issues—just like a human employee.',
+    description: 'Shows up in Slack or Discord as a real team member. Asks questions, shares updates, flags issues. Or DMs you directly on iMessage, WhatsApp, Telegram—wherever you actually check.',
     icon: '💬',
   },
   {
-    title: 'Runs Multiple Accounts',
-    description: 'Manages a fleet of TikTok, Instagram, and other social accounts. Warms them up, maintains health, keeps them active.',
-    icon: '📱',
+    title: 'Builds Custom Tools',
+    description: 'Writes scripts, builds dashboards, automates workflows. Need custom software for your specific use case? It ships code, not excuses.',
+    icon: '🛠️',
+  },
+  {
+    title: 'Researches & Analyzes',
+    description: 'Digs into competitors, trends, and market data. Analyzes performance across all your channels. Finds what\'s working and why.',
+    icon: '🔍',
   },
   {
     title: 'Creates Content Daily',
@@ -15,19 +20,14 @@ const features = [
     icon: '🎬',
   },
   {
-    title: 'Posts on Autopilot',
-    description: 'Schedules and publishes content automatically. Optimal timing, consistent cadence, zero manual work from you.',
-    icon: '⚡',
+    title: 'Runs Multiple Accounts',
+    description: 'Manages a fleet of TikTok, Instagram, and other social accounts. Warms them up, maintains health, keeps them active.',
+    icon: '📱',
   },
   {
-    title: 'Tracks What Works',
-    description: 'Monitors views, engagement, and conversions. Doubles down on winners, kills losers. Recursive improvement.',
-    icon: '📊',
-  },
-  {
-    title: 'Reports Weekly',
-    description: 'Sends performance updates right in your team channel. Metrics, insights, and what\'s planned next—no dashboards to check.',
-    icon: '📋',
+    title: 'Recursively Improves',
+    description: 'Tracks what works, kills what doesn\'t. Every batch of content gets smarter. Winning hooks spawn variations. Losers get cut. Darwinian marketing.',
+    icon: '🔄',
   },
 ]
 
