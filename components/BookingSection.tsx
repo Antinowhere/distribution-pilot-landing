@@ -17,15 +17,24 @@ export function BookingSection() {
         {/* Section Header */}
         <div className="text-center mb-10">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-3">
-            Ready?
+            Ready to Hire?
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4">
-            Book a strategy call.
+            Book your onboarding call.
           </h2>
           <p className="text-[var(--muted)] max-w-xl mx-auto">
-            We'll map out your first batch, discuss your niche, and show you exactly 
-            how Distribution Pilot fits your workflow.
+            We'll learn about your product, map out the content strategy, and 
+            get your AI growth marketer set up in your team workspace.
           </p>
+        </div>
+
+        {/* Pricing hint */}
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center gap-2 rounded-full bg-accent/10 border border-accent/20 px-4 py-2">
+            <span className="text-accent text-sm font-medium">Monthly retainer</span>
+            <span className="text-[var(--muted2)] text-sm">·</span>
+            <span className="text-[var(--muted)] text-sm">Pay like a salary, not a subscription</span>
+          </div>
         </div>
 
         {/* Cal.com Embed */}

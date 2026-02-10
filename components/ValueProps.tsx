@@ -1,33 +1,33 @@
 const features = [
   {
-    title: 'Real-Time Trend Data',
-    description: 'Make content based on what\'s working right now—not vague or outdated data. Updated monthly.',
-    icon: '📊',
+    title: 'Joins Your Team Chat',
+    description: 'Shows up in Slack or Discord as a real team member. Asks questions, shares updates, flags issues—just like a human employee.',
+    icon: '💬',
   },
   {
-    title: 'Brand-Tailored Formats',
-    description: 'Create winning formats customized to your brand voice and visual style.',
-    icon: '🎨',
+    title: 'Runs Multiple Accounts',
+    description: 'Manages a fleet of TikTok, Instagram, and other social accounts. Warms them up, maintains health, keeps them active.',
+    icon: '📱',
   },
   {
-    title: 'Recursive Improvement',
-    description: 'Learn from your past performance. Every batch gets smarter based on what worked.',
-    icon: '🔄',
+    title: 'Creates Content Daily',
+    description: 'Generates short-form videos, slideshows, and images tailored to your product. No templates—custom to your brand.',
+    icon: '🎬',
   },
   {
-    title: 'Full Auto or Semi-Auto',
-    description: 'Go hands-off with full automation, or stay in control with semi-automatic creation.',
+    title: 'Posts on Autopilot',
+    description: 'Schedules and publishes content automatically. Optimal timing, consistent cadence, zero manual work from you.',
     icon: '⚡',
   },
   {
-    title: 'Calendar & Scheduling',
-    description: 'Plan a month of content in minutes. Control frequency, format mix, and sales vs value ratio.',
-    icon: '📅',
+    title: 'Tracks What Works',
+    description: 'Monitors views, engagement, and conversions. Doubles down on winners, kills losers. Recursive improvement.',
+    icon: '📊',
   },
   {
-    title: 'Paid Ad Iteration',
-    description: 'Turn organic winners into paid campaigns. Iterate and improve automatically.',
-    icon: '🚀',
+    title: 'Reports Weekly',
+    description: 'Sends performance updates right in your team channel. Metrics, insights, and what\'s planned next—no dashboards to check.',
+    icon: '📋',
   },
 ]
 
@@ -38,10 +38,11 @@ export function ValueProps() {
         {/* Section Header */}
         <div className="text-center mb-14">
           <p className="text-xs font-semibold tracking-[0.2em] uppercase text-accent mb-3">
-            Why Distribution Pilot
+            What Your AI Marketer Does
           </p>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
-            The unfair advantage for content at scale.
+            Everything a growth hire would do.<br className="hidden sm:block" />
+            <span className="text-[var(--muted)]">Without the overhead.</span>
           </h2>
         </div>
 
