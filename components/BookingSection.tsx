@@ -1,13 +1,23 @@
 'use client'
 
 import Cal, { getCalApi } from '@calcom/embed-react'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 export function BookingSection() {
+  const [isLoaded, setIsLoaded] = useState(false)
+
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({ namespace: 'distribution-automation-strategy-call' })
-      cal('ui', { hideEventTypeDetails: false, layout: 'month_view' })
+      cal('ui', { 
+        hideEventTypeDetails: false, 
+        layout: 'month_view',
+        theme: 'dark',
+        styles: {
+          branding: { brandColor: '#f97316' }  // Orange accent
+        }
+      })
+      setIsLoaded(true)
     })()
   }, [])
 
@@ -38,15 +48,39 @@ export function BookingSection() {
         </div>
 
         {/* Cal.com Embed */}
-        <div className="rounded-2xl bg-black/30 border border-white/10 overflow-hidden">
+        <div className="rounded-2xl bg-black/30 border border-white/10 overflow-hidden relative">
+          {/* Loading state */}
+          {!isLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/50 z-10">
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-8 h-8 border-2 border-accent border-t-transparent rounded-full animate-spin" />
+                <p className="text-sm text-[var(--muted)]">Loading calendar...</p>
+              </div>
+            </div>
+          )}
           <div className="h-[720px]">
             <Cal
               namespace="distribution-automation-strategy-call"
               calLink="liam-mason01/distribution-automation-strategy-call"
               style={{ width: '100%', height: '100%', overflow: 'scroll' }}
-              config={{ layout: 'month_view' }}
+              config={{ layout: 'month_view', theme: 'dark' }}
             />
           </div>
+        </div>
+
+        {/* Fallback link */}
+        <div className="text-center mt-6">
+          <p className="text-sm text-[var(--muted2)]">
+            Calendar not loading?{' '}
+            <a 
+              href="https://cal.com/liam-mason01/distribution-automation-strategy-call" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-accent hover:underline"
+            >
+              Book directly on Cal.com →
+            </a>
+          </p>
         </div>
       </div>
     </section>
