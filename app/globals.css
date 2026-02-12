@@ -83,84 +83,12 @@ body {
   box-shadow: 0 0 0 3px rgba(255, 106, 0, 0.4);
 }
 
-/* Floating shapes animation */
-@keyframes float-up {
+/* Shimmer sweep for text hover */
+@keyframes shimmer {
   0% {
-    transform: translateY(100vh) rotate(0deg);
-    opacity: 0;
-  }
-  5% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
+    background-position: -200% 0;
   }
   100% {
-    transform: translateY(-100vh) rotate(45deg);
-    opacity: 0;
-  }
-}
-
-@keyframes float-up-alt {
-  0% {
-    transform: translateY(100vh) rotate(0deg);
-    opacity: 0;
-  }
-  8% {
-    opacity: 0.8;
-  }
-  92% {
-    opacity: 0.8;
-  }
-  100% {
-    transform: translateY(-100vh) rotate(-30deg);
-    opacity: 0;
-  }
-}
-
-.floating-shape {
-  position: absolute;
-  background: rgba(255, 255, 255, 0.035);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 2px;
-  pointer-events: none;
-}
-
-.floating-shape.s1 { animation: float-up 12s linear infinite; animation-delay: 0s; }
-.floating-shape.s2 { animation: float-up-alt 14s linear infinite; animation-delay: 1s; }
-.floating-shape.s3 { animation: float-up 11s linear infinite; animation-delay: 2s; }
-.floating-shape.s4 { animation: float-up-alt 15s linear infinite; animation-delay: 3s; }
-.floating-shape.s5 { animation: float-up 10s linear infinite; animation-delay: 4s; }
-.floating-shape.s6 { animation: float-up-alt 13s linear infinite; animation-delay: 5s; }
-.floating-shape.s7 { animation: float-up 12s linear infinite; animation-delay: 6s; }
-.floating-shape.s8 { animation: float-up-alt 14s linear infinite; animation-delay: 1.5s; }
-.floating-shape.s9 { animation: float-up 11s linear infinite; animation-delay: 3.5s; }
-.floating-shape.s10 { animation: float-up-alt 13s linear infinite; animation-delay: 2.5s; }
-
-/* Arrow float animation for growth hover */
-@keyframes float-arrow {
-  0%, 100% {
-    opacity: 0.5;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-/* Swing animation for gears */
-@keyframes swing-in {
-  0% {
-    transform: scale(0) rotate(-180deg);
-    opacity: 0;
-  }
-  50% {
-    transform: scale(1.2) rotate(10deg);
-  }
-  75% {
-    transform: scale(0.95) rotate(-5deg);
-  }
-  100% {
-    transform: scale(1) rotate(0deg);
-    opacity: 1;
+    background-position: 200% 0;
   }
 }
