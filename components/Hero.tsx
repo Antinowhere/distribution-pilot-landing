@@ -3,39 +3,28 @@ import { AnimatedHeadline } from './AnimatedHeadline'
 
 export function Hero() {
   return (
-    <section aria-label="Hero" className="flex flex-col items-center pt-32 pb-14 sm:pt-40 sm:pb-24">
+    <section id="hero" aria-label="Hero" className="flex flex-col items-center pt-32 pb-14 sm:pt-40 sm:pb-24">
       {/* Main headline - centered */}
       <div className="w-full text-center px-5 sm:px-6 lg:px-8">
         <AnimatedHeadline />
-        <p className="mx-auto mt-6 max-w-3xl text-xl text-[var(--muted)] sm:text-2xl leading-relaxed">
-          Not a tool. <span className="text-white font-medium">A teammate.</span> It joins your Slack or Discord, 
-          runs organic social across TikTok &amp; Instagram, and reports back like a real employee.
-        </p>
-        
-        <p className="mx-auto mt-4 max-w-2xl text-base text-[var(--muted2)]">
-          Direct reports via iMessage, WhatsApp, or Telegram. Team updates in your workspace. 
-          <span className="text-[var(--muted)] italic"> Yes, this is apparently where we're headed.</span>
+        <p className="mx-auto mt-6 max-w-3xl text-xl text-[var(--muted)] sm:text-2xl">
+          AI video generation from every leading model — templated, batched, and scheduled. One platform, a full content calendar, zero production bottleneck.
         </p>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <a
             href="#booking"
-            className="focus-ring inline-flex h-14 items-center justify-center rounded-xl bg-accent px-8 text-base font-semibold text-black shadow-lg transition hover:bg-accent-hover"
+            className="focus-ring inline-flex h-12 items-center justify-center rounded-xl bg-accent px-6 text-sm font-semibold text-black shadow-lg transition hover:bg-accent-hover"
           >
-            Book a hiring call
+            Book a strategy call
           </a>
           <a
             href="#how-it-works"
-            className="focus-ring inline-flex h-14 items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--panel)] px-8 text-base font-semibold text-foreground transition hover:bg-[var(--panel-strong)]"
+            className="focus-ring inline-flex h-12 items-center justify-center rounded-xl border border-[var(--border)] bg-[var(--panel)] px-6 text-sm font-semibold text-foreground transition hover:bg-[var(--panel-strong)]"
           >
             See how it works
           </a>
         </div>
-
-        {/* Social proof hint */}
-        <p className="mt-8 text-sm text-[var(--muted2)]">
-          Flat monthly fee. No per-seat pricing, no usage caps. Just results.
-        </p>
       </div>
 
       {/* Logo + brand at bottom */}
@@ -50,7 +39,7 @@ export function Hero() {
         <div>
           <p className="text-sm font-semibold tracking-wide">Distribution Pilot</p>
           <p className="text-xs text-[var(--muted2)]">
-            Your AI Growth Team Member
+            Bulk Content Automation
           </p>
         </div>
       </div>
