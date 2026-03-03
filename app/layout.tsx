@@ -1,55 +1,35 @@
-import type { Metadata } from 'next'
-import { Inter, JetBrains_Mono } from 'next/font/google'
-import './globals.css'
-
-const inter = Inter({ 
-  subsets: ['latin'],
-  variable: '--font-geist-sans',
-})
-
-const jetbrainsMono = JetBrains_Mono({ 
-  subsets: ['latin'],
-  variable: '--font-geist-mono',
-})
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-  title: 'Distribution Pilot | Data-Powered Content Automation',
-  description: 'Make the right content, at scale, automatically. Real-time social data meets automated content creation.',
+  title: "Distribution Pilot — AI Agents for Sales & Marketing",
+  description:
+    "We help businesses hire AI sales and marketing agents. Our team guides you through change management, tool selection, and deployment so you can focus on what you love.",
   icons: {
     icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
-      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180' },
-    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
-  manifest: '/site.webmanifest',
-  openGraph: {
-    title: 'Distribution Pilot | Data-Powered Content Automation',
-    description: 'Make the right content, at scale, automatically.',
-    url: 'https://distributionpilot.com',
-    siteName: 'Distribution Pilot',
-    type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Distribution Pilot',
-    description: 'Data-powered content automation at scale.',
-  },
-}
+  manifest: "/site.webmanifest",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
-      <body className="font-sans antialiased">
+    <html lang="en">
+      <body
+        suppressHydrationWarning
+        className="antialiased min-h-screen"
+      >
         {children}
       </body>
     </html>
-  )
+  );
 }
